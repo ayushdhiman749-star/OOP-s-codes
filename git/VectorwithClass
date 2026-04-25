@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Demo {
+public:
+    int n;
+
+    Demo(int a) {
+        n = a;
+    }
+};
+
+int main() {
+    vector<Demo> v;
+
+    v.push_back(Demo(10));
+    v.push_back(Demo(20));
+    v.push_back(Demo(30));
+
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i].n << " ";
+    }
+
+    return 0;
+}
